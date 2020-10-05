@@ -365,7 +365,7 @@ func (c *Client) AnswerInlineQuery(params AnswerInlineQueryParams) (*bool, error
 	return b, nil
 }
 
-func (c *Client) SetCotCommands(params SetBotCommandParams) (*bool, error) {
+func (c *Client) SetBotCommands(params SetBotCommandParams) (*bool, error) {
 	b := new(bool)
 
 	err := c.requestMaker.makeRequest("setMyCommands", params, b)
