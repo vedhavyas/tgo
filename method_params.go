@@ -198,3 +198,8 @@ type AnswerInlineQueryParams struct {
 	SwitchPmText      string              `json:"switch_pm_text,omitempty"`
 	SwitchPmParameter string              `json:"switch_pm_parameter,omitempty"`
 }
+
+// https://core.telegram.org/bots/api#botcommand
+type SetBotCommandParams struct {
+	Commands []BotCommand `json:"commands"`
+}
